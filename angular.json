@@ -21,13 +21,14 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+               "src/favicon.ico",
+                "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+             "node_modules/@totvs/po-theme/css/po-theme-default-variables.min.css",
+            "node_modules/@totvs/po-theme/css/po-theme-default.min.css",
+            "node_modules/@po-ui/style/css/po-theme-core.min.css",
+            "src/styles.css"
             ],
             "scripts": []
           },
@@ -36,8 +37,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "2MB",
+                  "maximumError": "3MB"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -79,12 +80,13 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/favicon.ico",
+                "src/assets"
             ],
             "styles": [
+              "node_modules/@totvs/po-theme/css/po-theme-default-variables.min.css",
+              "node_modules/@totvs/po-theme/css/po-theme-default.min.css",
+              "node_modules/@po-ui/style/css/po-theme-core.min.css",
               "src/styles.css"
             ],
             "scripts": []
